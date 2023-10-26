@@ -9,7 +9,7 @@ class SocketClient {
   SocketClient._internal() {
     // here we have to pass the server link when we deploy our server
 
-    socket = IO.io('http://localhost:3000', <String, dynamic>{
+    socket = IO.io('https://server-zero-katta.onrender.com', <String, dynamic>{
       'transports': ['websocket'],
       'autoConnect': true,
     });
